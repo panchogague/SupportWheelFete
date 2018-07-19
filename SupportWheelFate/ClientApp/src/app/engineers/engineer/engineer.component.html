@@ -1,0 +1,12 @@
+<h1>New Engineer</h1>
+<div class="row">
+
+  <form (ngSubmit)="saveEngineer(f)" #f="ngForm">
+    <div class="form-group" >
+      <label for="exampleInputEmail1">Name Engineer</label>
+      <input type="text" class="form-control" placeholder="Enter name" required [(ngModel)]="engineer.name" name="name">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Save</button>
+  </form>
+</div>
